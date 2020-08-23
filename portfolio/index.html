@@ -1,253 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Rosie Ellis</title>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" href="main.css">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title> Basic Bootstrap Portfolio</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css" media="screen">
+
 </head>
 
 <body>
-    <header>
-        <div class="menu-toggler">
-            <div class="bar half start"></div>
-            <div class="bar"></div>
-            <div class="bar half end"></div>
-        </div>
-        <nav class="top-nav">
-            <ul class="nav-list">
-                <li>
-                    <a href="index.html" class="nav-link">Home</a>
-                </li>
-                <li>
-                    <a href="#about" class="nav-link">About</a>
-                </li>
-                <li>
-                    <a href="#services" class="nav-link">Services</a>
-                </li>
-                <li>
-                    <a href="#portfolio" class="nav-link">Portfolio</a>
-                </li>
-                <li>
-                    <a href="#experience" class="nav-link">Experience</a>
-                </li>
-                <li>
-                    <a href="#contact" class="nav-link">Contact</a>
-                </li>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html" id="logo">About me</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-            </ul>
-        </nav>
-        <div class="landing-text">
-            <h1>Justin Lambeth</h1>
-            <h6>Full Stack Web developer</h6>
+  <main class="container">
+    <section class="row">
+      <div class="col-md-8">
+        <article class="block">
+          <h1 class="block-header">About Me</h1>
+          <hr />
+          <img src="assets/imgs/natebeach.jpeg" alt="" id="about-image" />
+          <p>My name is Justin Lambeth and I am a Air Force Veteran who just recently moved with my beautiful wife to Salt Lake City Utah for my newly choosen career in IT</p>
+          <p>I have been working at my company NICE inContact for 6 months now and have made the decision to further my education by enrolling in the University of Utah Web Development Bootcamp and I am looking forward to the information I obtain through the program</p>
+          <p>I love my Wife, and video games, and technology and plan on eventually being a Fullstack developer and owning my own company come day</p>
+          <br>
+          <container>
+            <p>links to my Github & Linkedin: </p>
+            <a href="https://github.com/justinlambeth1996" target="_self">Github</a>
+            <br>
+            <a href="https://www.linkedin.com/in/justin-lambeth/" target="_self">Linkedin</a>
+          </container>
+    
+        </article>
+        <article class="block">
+          <p>Contact me at: </p>
+          <div>
+          Phone: 240-993-6352
+          <br>
+          Email: JustinJ.lambeth@gmail.com
         </div>
-    </header>
+        </article>
+      </div>
 
-    <section class="about" id="about">
-        <div class="container">
-            <div class="profile-img">
-                <img src="images/profile.jpeg" alt="">
-            </div>
-            <div class="about-details">
-                <div class="about-heading">
-                    <h1>About</h1>
-                    <h6>Myself</h6>
-                </div>
-                <p>
 
-                </p>
-            </div>
-            <div class="social-media">
-                <ul class="nav-list">
-                    <li>
-                        <a href="#" class="icon-link">
-                            <i class="fab fa-facebook-square"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="icon-link">
-                            <i class="fab fa-twitter-square"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="icon-link">
-                            <i class="fab fa-Linkedin-square"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
     </section>
-
-    <section class="services" id="services">
-        <div class="container">
-            <div class="section-heading">
-                <h1>Services</h1>
-                <h6>What can I do for you</h6>
-            </div>
-            <div class="my-skills">
-                <div class="skill">
-                    <div class="icon-container">
-                        <i class="fas fa-layer-group"></i>
-                    </div>
-                    <h1>Web Design</h1>
-                    <p>
-                        asdefawefawefawefawefwefawefawefawe
-                        awefawefawefawefawefawefawefawefawe
-                    </p>
-                </div>
-                <div class="skill">
-                    <div class="icon-container">
-                        <i class="fas fa-code-group"></i>
-                    </div>
-                    <h1>Web Development</h1>
-                    <p>
-                        asdefawefawefawefawefwefawefawefawe
-                        awefawefawefawefawefawefawefawefawe
-                    </p>
-                </div>
-                <div class="skill">
-                    <div class="icon-container">
-                        <i class="fas fa-chart-group"></i>
-                    </div>
-                    <h1>Production Strategy</h1>
-                    <p>
-                        asdefawefawefawefawefwefawefawefawe
-                        awefawefawefawefawefawefawefawefawe
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="portfolio" id="portfolio">
-        <div class="container">
-            <div class="section-heading">
-                <h1>Portfolio</h1>
-                <h6>View some of my recent work</h6>
-            </div>
-            <div class="portfolio-item">
-                <div class="portfolio-img">
-                    <img src="images/portitem1.jpeg" alt="">
-                </div>
-                <div class="portfolio-item">
-                    <div class="portfolio-img">
-                        <img src="images/portitem1.jpeg" alt="">
-                    </div>
-                    <div class="portfolio-description">
-                        <h6>Web Development</h6>
-                        <h1>Blog Website</h1>
-                        <p>
-                            qwerqwerqwerqwerqwerqwerqwerqwerqwerqwerqwerqwer
-                            qwerqwerqwerqwerqwerqwerqwerqwerqwerqwerqwerqwer
-                        </p>
-                        <a href="#" class="cta">View Details</a>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="portfolio-description">
-                        <h6>Web Design</h6>
-                        <h1>Product Layout</h1>
-                        <p>
-                            qwerqwerqwerqwerqwerqwerqwerqwerqwerqwerqwerqwer
-                            qwerqwerqwerqwerqwerqwerqwerqwerqwerqwerqwerqwer
-                        </p>
-                        <a href="#" class="cta">View Details</a>
-                    </div>
-                    <div class="portfolio-img">
-                        <img src="images/portitem2.jpeg" alt="">
-                    </div>
-
-                </div>
-                <div class="portfolio-item">
-                    <div class="portfolio-img">
-                        <img src="images/portitem3.jpeg" alt="">
-                    </div>
-                    <div class="portfolio-description">
-                        <h6>Web Design</h6>
-                        <h1>Product Sketch</h1>
-                        <p>
-                            qwerqwerqwerqwerqwerqwerqwerqwerqwerqwerqwerqwer
-                            qwerqwerqwerqwerqwerqwerqwerqwerqwerqwerqwerqwer
-                        </p>
-                        <a href="#" class="cta">View Details</a>
-                    </div>
-                </div>
-            </div>
-    </section>
-
-    <section class="experience" id="experience">
-        <div class="container">
-            <div class="section-heading">
-                <h1>Work Experience</h1>
-                <h6>Past and current jobs</h6>
-            </div>
-            <div class="timeline">
-                <ul>
-                    <li class="date" data-date="2019 - Present">
-                        <h1>NICE inContact</h1>
-                        <p>
-                            regaewrgqawegqawegqawegqawegwegqaweqewrgwer
-                            ewrgwergwe4rhswer5hws34er5hws4e5rhws5rhw45h
-                        </p>
-                    </li>
-                    <li class="date" data-date="2015 - 2019">
-                        <h1>Air Force</h1>
-                        <p>
-                            regaewrgqawegqawegqawegqawegwegqaweqewrgwer
-                            ewrgwergwe4rhswer5hws34er5hws4e5rhws5rhw45h
-                        </p>
-                    </li>
-                    <li class="date" data-date="20xx - xxxx">
-                        <h1>Google</h1>
-                        <p>
-                            regaewrgqawegqawegqawegqawegwegqaweqewrgwer
-                            ewrgwergwe4rhswer5hws34er5hws4e5rhws5rhw45h
-                        </p>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section class="contact" id="contact">
-        <div class="container">
-            <div class="section-heading">
-                <h1>Contact</h1>
-                <h6>Let's work together</h6>
-            </div>
-            <form action="">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Enter your name.." required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email.." required>
-                <label for="service">Services:</label>
-                <select type="services" id="service">
-                    <option value="">Web Design</option>
-                    <option value="">Web Development</option>
-                    <option value="">Web Design/Development</option>
-                </select>
-                <label for="subject">Subject:</label>
-                <textarea name="subject" id="subject" cols="10" rows="10"></textarea>
-                <input type="submit" value="Sumbit">
-            </form>
-        </div>
-    </section>
-    <footer class="copyright">
-        <div class="up" id="up">
-            <i class="fas fa-chevron-up"></i>
-            <p>&copy; 2020 Justin Lambeth</p>
-        </div>
-    </footer>
+  </main>
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="main.js"></script>
+  <footer class="footer">
+    <div class="two-toned-footer-color"></div>
+    <p class="text-muted text-muted-footer text-center">
+      &copy; Copyright Justin Lambeth 2020
+    </p>
+  </footer>
+
+
+  <!-- jQuery & Bootstrap CDN -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>
